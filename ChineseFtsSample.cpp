@@ -1,0 +1,7 @@
+#include "ChineseFtsSample.hpp"
+
+WCDB_CPP_ORM_IMPLEMENTATION_BEGIN(ChineseFtsSample)
+WCDB_CPP_SYNTHESIZE(content)
+WCDB_CPP_VIRTUAL_TABLE_MODULE(WCDB::Module::FTS5)
+WCDB_CPP_VIRTUAL_TABLE_TOKENIZE_WITH_PARAMETERS(WCDB::BuiltinTokenizer::Verbatim, WCDB::BuiltinTokenizer::Parameter::SimplifyChinese)
+WCDB_CPP_ORM_IMPLEMENTATION_END

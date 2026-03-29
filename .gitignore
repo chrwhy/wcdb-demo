@@ -1,0 +1,4 @@
+build/
+sample.db
+*.db
+.DS_Store
